@@ -8,71 +8,78 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
-      <fieldset>
-        <legend>Basic Vehicle Information</legend>
-        <label for="make">Make</label>
-        <input required type="text" name="make" id="make" />
-        <label for="model">Model</label>
-        <input required type="text" name="model" id="model" />
-        <label for="year">Year</label>
-        <input
-          required
-          type="number"
-          min="1900"
-          max="2030"
-          step="1"
-          name="year"
-          id="year" />
-        <label for="trim">Trim</label>
-        <input required type="text" name="trim" id="trim" />
-        <label for="trim">Transmission</label>
-        <input required type="text" name="transmission" id="transmission" />
-        <label for="miles">Miles</label>
-        <input required type="text" name="miles" id="miles" />
-        <label for="make">Price</label>
-        <input required type="number" name="price" id="price" />
-      </fieldset>
-      <fieldset>
-        <legend>Vehicle Specification</legend>
-        <label for="engine">Engine</label>
-        <input required type="text" name="engine" id="engine" />
-        <label for="horsepower">Horsepower</label>
-        <input
-          required
-          type="number"
-          min="1"
-          max="1000"
-          name="horsepower"
-          id="horsepower" />
-        <label for="year">MPG</label>
-        <input type="number" min="1" max="100" />
-      </fieldset>
-      <input type="submit" value="Post Car" />
-    </form>
-    <article>
-      <div class="card">
-        <div class="card-header">
-          <p class="year">2014</p>
-          <p class="make">Honda</p>
-          <p class="model">Fit</p>
-          <p class="trim">LX CVT</p>
-        </div>
-        <div class="card-article">
-          <div class="card-article-header">
-            <p class="miles">138,000 Miles</p>
-            <p class="price">$10,000</p>
+    <div class="grid-container">
+      <header></header>
+      <form>
+        <fieldset>
+          <legend>Basic Vehicle Information</legend>
+          <label for="make">Make</label>
+          <input required type="text" name="make" id="make" />
+          <label for="model">Model</label>
+          <input required type="text" name="model" id="model" />
+          <label for="year">Year</label>
+          <input
+            required
+            type="number"
+            min="1900"
+            max="2030"
+            step="1"
+            name="year"
+            id="year" />
+          <label for="trim">Trim</label>
+          <input required type="text" name="trim" id="trim" />
+          <label for="trim">Transmission</label>
+          <input required type="text" name="transmission" id="transmission" />
+          <label for="miles">Miles</label>
+          <input required type="text" name="miles" id="miles" />
+          <label for="make">Price</label>
+          <input required type="number" name="price" id="price" />
+        </fieldset>
+        <fieldset>
+          <legend>Vehicle Specification</legend>
+          <label for="engine">Engine</label>
+          <input required type="text" name="engine" id="engine" />
+          <label for="horsepower">Horsepower</label>
+          <input
+            required
+            type="number"
+            min="1"
+            max="1000"
+            name="horsepower"
+            id="horsepower" />
+          <label for="year">MPG</label>
+          <input type="number" min="1" max="100" />
+        </fieldset>
+        <input type="submit" value="Post Car" />
+      </form>
+      <article>
+        <div class="card">
+          <div class="card-header">
+            <p class="year">2014</p>
+            <p class="make">Honda</p>
+            <p class="model">Fit</p>
+            <p class="trim">LX CVT</p>
           </div>
-          <div class="card-article-specification">
-            <p class="transmission">Automatic transmission</p>
-            <p class="engine">Inline V4 engine</p>
-            <p class="horsepower">130 horsepower</p>
-            <p class="mpg">36 MPG combined</p>
+          <div class="card-article">
+            <div class="card-article-header">
+              <p class="miles">138,000 Miles</p>
+              <p class="price">$10,000</p>
+            </div>
+            <div class="card-article-specification">
+              <p class="transmission">Automatic transmission</p>
+              <p class="engine">Inline V4 engine</p>
+              <p class="horsepower">130 horsepower</p>
+              <p class="mpg">36 MPG combined</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p>Save</p>
+            <p>Share Button</p>
           </div>
         </div>
-        <div class="card-footer"></div>
-      </div>
-    </article>
+      </article>
+      <footer></footer>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
