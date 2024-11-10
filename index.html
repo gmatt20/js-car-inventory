@@ -8,6 +8,42 @@
     <title>Document</title>
   </head>
   <body>
+    <form>
+      <fieldset>
+        <legend>Basic Vehicle Information</legend>
+        <label for="make">Make</label>
+        <input required type="text" name="make" id="make" />
+        <label for="model">Model</label>
+        <input required type="text" name="model" id="model" />
+        <label for="year">Year</label>
+        <input
+          required
+          type="number"
+          min="1900"
+          max="2030"
+          step="1"
+          name="year"
+          id="year" />
+        <label for="make">Price</label>
+        <input required type="number" name="price" id="price" />
+      </fieldset>
+      <fieldset>
+        <legend>Vehicle Specification</legend>
+        <label for="engine">Engine</label>
+        <input required type="text" name="engine" id="engine" />
+        <label for="horsepower">Horsepower</label>
+        <input
+          required
+          type="number"
+          min="1"
+          max="1000"
+          name="horsepower"
+          id="horsepower" />
+        <label for="year">MPG</label>
+        <input type="number" min="1" max="100" />
+      </fieldset>
+      <input type="submit" value="Post Car" />
+    </form>
     <script src="./script.js"></script>
   </body>
 </html>
